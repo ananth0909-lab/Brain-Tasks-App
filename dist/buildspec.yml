@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - echo Logging in to DockerHub
+      - docker login -u mydockerimage31 -p dckr_pat_TeoXrFT2_aFGGssBJ5ofZdYkbWA
+  build:
+    commands:
+      - echo Build started
+      - docker build -t brain-app .
+      - docker tag brain-app mydockerimage31/brain-app:latest
+  post_build:
+    commands:
+      - echo Pushing image
+      - docker push mydockerimage31/brain-app:latest

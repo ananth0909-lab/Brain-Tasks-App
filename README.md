@@ -89,3 +89,57 @@ No dependencies are required
 No build process is required
 
 No package.json is needed
+
+
+
+
+
+
+
+
+
+
+# Brain Tasks App Deployment (DevOps Project)
+
+## 🚀 Project Overview
+This project demonstrates deployment of a React application using Docker, Kubernetes, and AWS EKS with CI/CD pipeline.
+
+## 🛠️ Tech Stack
+- AWS EC2
+- Amazon EKS
+- Docker & DockerHub
+- Kubernetes
+- AWS CodeBuild
+- AWS CodePipeline
+- Amazon CloudWatch
+
+## ⚙️ Steps Performed
+
+### 1. Application Setup
+- Cloned GitHub repo
+- Built production files using Vite
+
+### 2. Dockerization
+- Created Dockerfile
+- Built Docker image
+- Pushed image to DockerHub
+
+### 3. Kubernetes Deployment
+- Created deployment.yaml
+- Created service.yaml
+- Deployed on EKS cluster
+- Exposed using LoadBalancer
+
+### 4. CI/CD Pipeline
+- CodePipeline connected to GitHub
+- CodeBuild builds and pushes Docker image
+- Deployment automated to EKS
+
+### 5. Monitoring
+- Logs monitored using CloudWatch
+
+## 🌐 Application URL
+http://a63aee061b39847d38bd25db59f6f39a-1219897690.ap-south-1.elb.amazonaws.com/
+
+## 📌 Conclusion
+Successfully deployed a scalable React application using DevOps practices.
